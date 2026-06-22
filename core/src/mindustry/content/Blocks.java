@@ -1190,8 +1190,9 @@ public class Blocks{
             requirements(Category.crafting, with(Items.copper, 50, Items.lead, 25));
             hasItems = true;
             hasPower = true;
-            outputItem = new ItemStack(Items.pyratite, 1);
+            outputItem = new ItemStack(Items.pyratite, 2);
             envEnabled |= Env.space;
+            craftTime = 100;
 
             size = 2;
             ambientSound = Sounds.loopMachineSpin;
@@ -1205,13 +1206,14 @@ public class Blocks{
             requirements(Category.crafting, with(Items.lead, 30, Items.titanium, 20));
             hasItems = true;
             hasPower = true;
-            outputItem = new ItemStack(Items.blastCompound, 1);
+            outputItem = new ItemStack(Items.blastCompound, 2);
             size = 2;
             envEnabled |= Env.space;
+            craftTime = 100;
             ambientSound = Sounds.loopMachineSpin;
             ambientSoundVolume = 0.12f;
 
-            consumeItems(with(Items.pyratite, 1, Items.sporePod, 1));
+            consumeItems(with(Items.pyratite, 2, Items.sporePod, 1));
             consumePower(0.40f);
         }};
 
