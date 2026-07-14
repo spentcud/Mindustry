@@ -1036,7 +1036,7 @@ public class UnitTypes{
 
         flare = new UnitType("flare"){{
             researchCostMultiplier = 0.5f;
-            speed = 2.7f;
+            speed = 2f;
             accel = 0.08f;
             drag = 0.04f;
             flying = true;
